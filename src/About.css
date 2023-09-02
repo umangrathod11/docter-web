@@ -1,6 +1,3 @@
-/* About.css */
-
-
 /* Common Styling for SAP-Like Design */
 .edit {
   position: relative;
@@ -29,109 +26,130 @@
   pointer-events: none;
 }
 
-
+/* About Container */
 .about-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+  flex-direction: column-reverse; /* Reverse order on mobile to have content on top */
+  padding: 20px; /* Reduce padding on mobile for content to fit */
   background-color: darkcyan;
-  height: 100vh;
   overflow: hidden;
 }
 
+/* Content Styling */
 .content {
-  flex: 1;
   text-align: center;
-  z-index: 2; /* Ensure content is above the image */
+  z-index: 2;
   position: relative;
 }
 
+/* Image Container Styling */
+/* Adjust the image-container style for mobile */
 .image-container {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-height: calc(100vh - 100px); */
+  height: 200px; /* Adjust height for mobile view */
   overflow: hidden;
-  z-index: 1; /* Set the image behind the content */
+  z-index: 1;
+  margin-top: 20px; /* Add space between the table and the image on mobile */
 }
 
 img {
   max-width: 100%;
-  height: 80%;
-  width: 80%;
-  max-height: 400px;
+  max-height: 100%; /* Ensure image fits within the container */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Timetable Styling */
 .timetable {
-  margin-top: -100px;
-  
+  margin-top: 20px; /* Add space on top for mobile */
 }
 
-/* About.css */
-/* ... (previous styles) */
-
+/* Table Styling */
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    
+  width: 100%;
+  border-collapse: collapse; /* Change to collapse for a cleaner look */
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Add space on top for mobile */
+}
+
+/* Caption Styling */
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Table Header and Data Cell Styling */
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.05) 10px,
+    rgba(0, 0, 0, 0.05) 20px
+  );
+}
+
+/* Table Header Styling */
+th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Table Data Cell Styling */
+td {
+  background-color: #ffffff;
+}
+
+/* Remove bottom border from last row data cells */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Styling for odd rows */
+tbody tr:nth-child(odd) td {
+  background-color: #f7f7f7;
+}
+
+/* Styling for hover effect */
+tbody tr:hover td {
+  background-color: #e0e0e0;
+}
+
+/* Styling for break rows */
+.break-row {
+  background-color: #ffcccb;
+  font-weight: bold;
+  color: #d63a2e;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+  .about-container {
+    padding: 10px;
   }
-  
-  caption {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
+
+  .image-container {
+    height: auto;
   }
-  
-  th,
-  td {
-    padding: 12px 20px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      rgba(0, 0, 0, 0.05) 10px,
-      rgba(0, 0, 0, 0.05) 20px
-    );
+
+  img {
+    max-height: 300px;
   }
-  
-  th {
-    background-color: #f0f0f0;
-    color: #333;
+
+  .timetable {
+    margin-top: 10px;
   }
-  
-  td {
-    background-color: #ffffff;
-  }
-  
-  tr:last-child td {
-    border-bottom: none;
-  }
-  
-  /* Styling for odd rows */
-  tbody tr:nth-child(odd) td {
-    background-color: #f7f7f7;
-  }
-  
-  /* Styling for hover effect */
-  tbody tr:hover td {
-    background-color: #e0e0e0;
-  }
-  
-  /* Styling for break rows */
-  .break-row {
-    background-color: #ffcccb;
-    font-weight: bold;
-    color: #d63a2e;
-  }
-  
+
+  /* Adjust other styles as needed for smaller screens */
+}
