@@ -18,12 +18,6 @@ function Home() {
         શ્રેષ્ઠ સારવાર અને શ્રેષ્ઠ દવા
         હાડકાના ડૉક્ટરનો સારો અનુભવ
         </p>
-        <p>
-        Orthopedic doctors (sometimes also called orthopaedic doctors or orthopaedic surgeons) are doctors who focus on caring for your bones, joints, ligaments, nerves, and tendons (the tissue that connects bones and joints). These parts of your body are also referred to as your “musculoskeletal system.”
-        </p>
-        <p>
-        Orthopedic surgeons are doctors who specialize in the musculoskeletal system - the bones, joints, ligaments, tendons, and muscles that are so essential to movement and everyday life
-        </p>
       
       </div>
       <div className="image-container">

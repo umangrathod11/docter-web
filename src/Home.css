@@ -1,112 +1,85 @@
+/* Styling for the home container */
 .home-container {
-    background-color: darkcyan;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: center; 
-    overflow: hidden; /* Prevent vertical scroll */
-  
-    /* Set the following to center content vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .content {
-    color: darkcyan;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* ... Other styles ... */
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: -100px;
-    flex-wrap: wrap; /* Allow images to wrap to the next line */
-  }
-  
-  .image-card {
-    width: 200px;
-    height: auto; /* Remove fixed height to allow variable content height */
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.5s, box-shadow 0.5s, cursor 0.5s, background-color 0.5s; /* Added background-color transition */
-    margin: 10px; /* Added margin for spacing between image cards */
-    background-color: darkcyan; /* Default background color for all cards */
-  }
-  
-  .image-card img {
-    width: 100%;
-    height: auto; /* Allow the image's height to adjust to its content */
-    object-fit: cover;
-  }
-  
-  /* Add a hover effect for all image cards */
-  .image-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    background-color: darkcyan; /* Change the background color on hover */
-  }
-  
-  /* Style for the <p> tag within the image card */
-  .image-card p {
-    padding: 10px;
-    margin: 0; /* Remove default margin */
-    text-align: center;
-    color: white;
-    font-size: 16px; /* Adjust font size as needed */
-  }
-  
+  background-color: darkcyan;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden; /* Prevent vertical scroll */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  @media (min-width: 768px) {
-    .home-container {
-      flex-direction: row;
-      text-align: left;
-    }
-  
-    .content {
-      font-size: 24px;
-    }
-  
-    .image-container {
-      justify-content: flex-start;
-      margin-top: 0;
-    }
+/* Styling for the content */
+.content {
+  color: darkcyan;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: -100px;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+/* Styling for the small image cards on mobile */
+.small-image-card {
+  width: 100%;
+  height: auto; /* Allow variable content height */
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.5s, box-shadow 0.5s, cursor 0.5s, background-color 0.5s; /* Added background-color transition */
+  margin: 10px; /* Added margin for spacing between image cards */
+  background-color: darkcyan; /* Default background color for all cards */
+}
+
+/* Styling for the images within the small image cards */
+.small-image-card img {
+  width: 100%;
+  height: auto; /* Allow the image's height to adjust to its content */
+  object-fit: cover;
+}
+
+/* Hover effect for small image cards */
+.small-image-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: darkcyan; /* Change the background color on hover */
+}
+
+/* Styling for the <p> tag within the small image cards */
+.small-image-card p {
+  padding: 10px;
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  color: white;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    text-align: left;
   }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 576px) {
-    .home-container {
-      padding: 20px;
-    }
-  
-    .content {
-      font-size: 18px;
-    }
-  
-    .image-container {
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  
-    .image-card {
-      width: 100%;
-      margin: 10px 0;
-    }
+
+  .content {
+    font-size: 24px;
   }
-  
-  
-  
-  
-  
-  
+
+  .image-container {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+}
