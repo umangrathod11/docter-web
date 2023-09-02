@@ -33,23 +33,36 @@
   
   .image-card {
     width: 200px;
-    height: 300px;
+    height: auto; /* Remove fixed height to allow variable content height */
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transition: transform 0.5s, box-shadow 0.5s, cursor 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s, cursor 0.5s, background-color 0.5s; /* Added background-color transition */
+    margin: 10px; /* Added margin for spacing between image cards */
+    background-color: darkcyan; /* Default background color for all cards */
   }
   
   .image-card img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Allow the image's height to adjust to its content */
     object-fit: cover;
   }
   
+  /* Add a hover effect for all image cards */
   .image-card:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    background-color: darkcyan; /* Change the background color on hover */
+  }
+  
+  /* Style for the <p> tag within the image card */
+  .image-card p {
+    padding: 10px;
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    color: white;
+    font-size: 16px; /* Adjust font size as needed */
   }
   
