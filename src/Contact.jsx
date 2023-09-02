@@ -39,7 +39,7 @@ function Contact() {
         <p>If you have any questions or inquiries, feel free to reach out to us.</p>
         <div className="contact-info">
           <p><FontAwesomeIcon icon={faEnvelope} /> Email: contact@example.com</p>
-          <p><FontAwesomeIcon icon={faPhone} /> Phone:(+91) 6353626531</p>
+          <p><FontAwesomeIcon icon={faPhone} /> Phone:(+91) 8866301223</p>
           <p><FontAwesomeIcon icon={faMapMarker} /> Address: shop no 2, Amipark society no 2, kargil chok to sagar road, kargil-chok, surat</p>
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
