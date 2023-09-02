@@ -136,34 +136,47 @@ table {
   }
   
 
-  /* Add this CSS for mobile devices */
-  @media screen and (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      padding: 20px; /* Reduce padding on smaller screens */
-    }
-  
-    .content {
-      text-align: center;
-      padding: 20px; /* Add padding to the content */
-      font-size: 16px; /* Adjust font size for all content */
-    }
-  
-    .image-container {
-      margin-top: 0px; /* Add spacing between content and image */
-    }
-  
-    img {
-      max-height: 50px; /* Reduce image height on smaller screens */
-    }
- 
-    table {
-      font-size: 14px; /* Reduce font size for tables on smaller screens */
-    }
-  
-    th,
-    td {
-      padding: 8px 12px; /* Adjust table cell padding for smaller screens */
-    }
+  /* Default styles for larger screens */
+/* ... (your default styles) */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px; /* Reduce padding on smaller screens */
   }
-  
+
+  .content {
+    text-align: center;
+    padding: 20px; /* Add padding to the content */
+    font-size: 16px; /* Adjust font size for all content */
+  }
+
+  .image-container {
+    margin-top: 100px; /* Add spacing between content and image */
+  }
+
+  img {
+    max-height: 100px; /* Reduce image height on smaller screens */
+  }
+
+  table {
+    font-size: 14px; /* Reduce font size for tables on smaller screens */
+  }
+
+  th,
+  td {
+    padding: 8px 12px; /* Adjust table cell padding for smaller screens */
+  }
+}
+
+/* Media query for screens with a maximum width of 480px (even smaller screens) */
+@media screen and (max-width: 480px) {
+  /* Add styles specific to screens with a maximum width of 480px */
+  /* For example: */
+  .content {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+  }
+}
+
+/* Add more media queries for other screen sizes as needed */
