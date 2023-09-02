@@ -14,12 +14,9 @@ function Home() {
         <p>Hadvaidh</p>
         <p>Last 10 years of experience in Ayurveda</p>
         <p>
-        An orthopaedic surgeon demanded that a young anaesthetist leave his existing group practice and join one that he had influence with.
-The Guardian (2016)
-Now the Arizona-based orthopaedic surgeon is frustrated by the unvaccinated population that is making the pandemic feel like a battleground.
-The Guardian (2021)
-That's like saying an orthopaedic surgeon has to go and break a few bones before they can know how to repair them.
-The Guardian (2019)
+        છેલ્લા ઘણા વર્ષોનો અનુભવ
+        શ્રેષ્ઠ સારવાર અને શ્રેષ્ઠ દવા
+        હાડકાના ડૉક્ટરનો સારો અનુભવ
         </p>
       
       </div>
