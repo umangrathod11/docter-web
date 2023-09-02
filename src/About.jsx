@@ -9,10 +9,7 @@ function About() {
       <div className="image-container">
   <img src={img} alt="About" />
   <div className="image-overlay">
-    <div className="overlay-content">
-      <h3>About Us</h3>
-      <p>Very expert in bone doctors and our medicine and treatment is good...</p>
-    </div>
+
   </div>
 </div>
 

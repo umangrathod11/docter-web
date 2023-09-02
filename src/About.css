@@ -1,3 +1,6 @@
+/* About.css */
+
+
 /* Common Styling for SAP-Like Design */
 .edit {
   position: relative;
@@ -26,130 +29,141 @@
   pointer-events: none;
 }
 
-/* About Container */
+
 .about-container {
-  display: flex;
-  flex-direction: column-reverse; /* Reverse order on mobile to have content on top */
-  padding: 20px; /* Reduce padding on mobile for content to fit */
-  background-color: darkcyan;
-  overflow: hidden;
-}
-
-/* Content Styling */
-.content {
-  text-align: center;
-  z-index: 2;
-  position: relative;
-}
-
-/* Image Container Styling */
-/* Adjust the image-container style for mobile */
-.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust height for mobile view */
+  padding: 50px;
+  background-color: darkcyan;
+  height: 100vh;
   overflow: hidden;
-  z-index: 1;
-  margin-top: 20px; /* Add space between the table and the image on mobile */
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+  z-index: 2; /* Ensure content is above the image */
+  position: relative;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-height: calc(100vh - 100px); */
+  overflow: hidden;
+  z-index: 1; /* Set the image behind the content */
 }
 
 img {
   max-width: 100%;
-  max-height: 100%; /* Ensure image fits within the container */
+  height: 80%;
+  width: 80%;
+  max-height: 400px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Timetable Styling */
 .timetable {
-  margin-top: 20px; /* Add space on top for mobile */
+  margin-top: -100px;
+  
 }
 
-/* Table Styling */
+/* About.css */
+/* ... (previous styles) */
+
 table {
-  width: 100%;
-  border-collapse: collapse; /* Change to collapse for a cleaner look */
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Add space on top for mobile */
-}
-
-/* Caption Styling */
-caption {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-/* Table Header and Data Cell Styling */
-th,
-td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 10px,
-    rgba(0, 0, 0, 0.05) 10px,
-    rgba(0, 0, 0, 0.05) 20px
-  );
-}
-
-/* Table Header Styling */
-th {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-/* Table Data Cell Styling */
-td {
-  background-color: #ffffff;
-}
-
-/* Remove bottom border from last row data cells */
-tr:last-child td {
-  border-bottom: none;
-}
-
-/* Styling for odd rows */
-tbody tr:nth-child(odd) td {
-  background-color: #f7f7f7;
-}
-
-/* Styling for hover effect */
-tbody tr:hover td {
-  background-color: #e0e0e0;
-}
-
-/* Styling for break rows */
-.break-row {
-  background-color: #ffcccb;
-  font-weight: bold;
-  color: #d63a2e;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 576px) {
-  .about-container {
-    padding: 10px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
   }
-
-  .image-container {
-    height: auto;
+  
+  caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
   }
-
-  img {
-    max-height: 300px;
+  
+  th,
+  td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.05) 10px,
+      rgba(0, 0, 0, 0.05) 20px
+    );
   }
-
-  .timetable {
-    margin-top: 10px;
+  
+  th {
+    background-color: #f0f0f0;
+    color: #333;
   }
+  
+  td {
+    background-color: #ffffff;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Styling for odd rows */
+  tbody tr:nth-child(odd) td {
+    background-color: #f7f7f7;
+  }
+  
+  /* Styling for hover effect */
+  tbody tr:hover td {
+    background-color: #e0e0e0;
+  }
+  
+  /* Styling for break rows */
+  .break-row {
+    background-color: #ffcccb;
+    font-weight: bold;
+    color: #d63a2e;
+  }
+  
 
-  /* Adjust other styles as needed for smaller screens */
-}
+  /* Add this CSS for mobile devices */
+  @media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      padding: 20px; /* Reduce padding on smaller screens */
+    }
+  
+    .content {
+      text-align: center;
+      padding: 20px; /* Add padding to the content */
+      font-size: 16px; /* Adjust font size for all content */
+    }
+  
+    .image-container {
+      margin-top: 0px; /* Add spacing between content and image */
+    }
+  
+    img {
+      max-height: 50px; /* Reduce image height on smaller screens */
+    }
+ 
+    table {
+      font-size: 14px; /* Reduce font size for tables on smaller screens */
+    }
+  
+    th,
+    td {
+      padding: 8px 12px; /* Adjust table cell padding for smaller screens */
+    }
+  }
+  
