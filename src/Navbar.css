@@ -1,0 +1,98 @@
+/* Reset Default Styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Navbar Styling */
+.navbar-mainbg {
+  background-color: #5161ce;
+  padding: 0;
+}
+
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+
+#navbarSupportedContent ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+
+/* ... (Other styles from the provided CSS for the Bootstrap navbar) ... */
+
+/* App Container */
+.App {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  border-bottom: solid black thin;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ff9900;
+  text-decoration: underline;
+}

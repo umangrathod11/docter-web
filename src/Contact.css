@@ -1,0 +1,91 @@
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: darkcyan;
+  min-height: 100vh;
+}
+
+/* Content Styling */
+.content {
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  font-size: 32px; /* Increase the font size for headings */
+  margin-bottom: 20px;
+  color: wheat;
+}
+
+/* Text Styling */
+p {
+  font-size: 18px;
+  color: wheat;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Contact Information Styling */
+.contact-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color:wheat;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  margin-top: 20px; /* Decrease the margin to make it closer to the content */
+  padding: 20px; /* Adjust the padding to make the form more compact */
+  background-color: cadetblue; /* Add a semi-transparent background */
+  border-radius: 10px;
+  color: black;
+}
+
+/* Label Styling */
+label {
+  font-size: 18px; /* Adjust font size for labels */
+  margin-bottom: 8px; /* Adjust the margin for labels */
+}
+
+/* Input and Textarea Styling */
+input,
+textarea {
+  width: 100%;
+  padding: 10px; /* Adjust padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly reduce the border radius */
+  font-size: 16px;
+  margin-bottom: 15px; /* Adjust margin for input fields */
+  /* background-color: rgba(255, 255, 255, 0.8); Add a semi-transparent background */
+  /* color: brown; */
+}
+
+/* Textarea Resizing */
+textarea {
+  resize: vertical;
+}
+
+/* Button Styling */
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Adjust padding for the button */
+  border-radius: 8px; /* Slightly increase the border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 18px; /* Increase the font size for the button */
+}
+
+button:hover {
+  background-color: #e57f00;
+}
+
