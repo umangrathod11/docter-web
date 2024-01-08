@@ -157,9 +157,7 @@ table {
   }
 
 .about-img{
-  display: block;
-  margin: auto;
-  
+  display: none;
 }
 
   table {
