@@ -7,7 +7,7 @@ function About() {
     <div className="about-container">
      
       <div className="image-container">
-  <img src={img} alt="About" />
+  <img src={img}className='about-img' alt="About" />
   <div className="image-overlay">
 
   </div>

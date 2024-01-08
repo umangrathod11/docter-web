@@ -156,7 +156,11 @@ table {
     margin-top: 100px; /* Add spacing between content and image */
   }
 
-
+.about-img{
+  display: block;
+  margin: auto;
+  
+}
 
   table {
     font-size: 14px; /* Reduce font size for tables on smaller screens */
