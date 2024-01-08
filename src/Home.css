@@ -18,6 +18,8 @@
   color: darkcyan;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  margin-top: 40px;/* Adjust font size for all content */
+
 }
 
 /* Styling for the image container */
@@ -78,7 +80,9 @@
   .content {
     /* Adjust content styles for smaller screens */
     /* For example: */
-    font-size: 14px; /* Reduce font size */
+    font-size: 14px; 
+    margin-top: 40px;/* Adjust font size for all content */
+    /* Reduce font size */
   }
 
   .image-container {

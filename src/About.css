@@ -149,7 +149,7 @@ table {
   .content {
     text-align: center;
     padding: 20px; /* Add padding to the content */
-    font-size: 16px; /* Adjust font size for all content */
+    font-size: 16px; 
   }
 
   .image-container {
