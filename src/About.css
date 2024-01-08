@@ -157,8 +157,8 @@ table {
   }
 
   img {
-    max-height: 100px; /* Reduce image height on smaller screens */
-  }
+
+display: none;  }
 
   table {
     font-size: 14px; /* Reduce font size for tables on smaller screens */
