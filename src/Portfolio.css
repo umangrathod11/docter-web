@@ -88,3 +88,35 @@
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
+
+
+
+/* Portfolio.css */
+
+/* Your existing styles */
+
+/* Media query for screens up to 576px */
+@media screen and (max-width: 576px) {
+  .portfolio-container {
+    /* Adjust container styles for smaller screens */
+    /* For example: */
+    padding: 20px; /* Add padding to the container */
+  }
+
+  .image-slider {
+    /* Adjust image slider styles for smaller screens */
+    /* For example: */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image-slider img {
+    /* Adjust image styles for smaller screens */
+    /* For example: */
+    width: 45%; /* Make images take up less width */
+    margin-bottom: 20px; /* Add some margin between images */
+  }
+
+  /* Additional styles as needed */
+}

@@ -89,3 +89,36 @@ button:hover {
   background-color: #e57f00;
 }
 
+/* Contact.css */
+
+/* Your existing styles */
+
+/* Media query for screens up to 576px */
+@media screen and (max-width: 576px) {
+  .contact-container {
+    /* Adjust container styles for smaller screens */
+    /* For example: */
+    padding: 20px; /* Add padding to the container */
+  }
+
+  .content {
+    /* Adjust content styles for smaller screens */
+    /* For example: */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .contact-info {
+    /* Adjust contact info styles for smaller screens */
+    /* For example: */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .contact-form {
+    /* Adjust form styles for smaller screens */
+    /* For example: */
+    width: 90%; /* Make the form take up less width */
+    margin: auto; /* Center the form */
+  }
+
+  /* Additional styles as needed */
+}
