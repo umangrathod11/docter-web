@@ -156,9 +156,7 @@ table {
     margin-top: 100px; /* Add spacing between content and image */
   }
 
-  img {
 
-display: none;  }
 
   table {
     font-size: 14px; /* Reduce font size for tables on smaller screens */
